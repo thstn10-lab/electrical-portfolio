@@ -1,0 +1,31 @@
+.companies {
+  padding: 2.25rem 0 0.5rem;
+}
+
+.companies__label {
+  margin-bottom: 1.1rem;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.companies__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.75rem;
+}
+
+.companies__row span {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(15, 62, 23, 0.45);
+  transition: color 0.25s ease;
+}
+
+.companies__row span:hover {
+  color: var(--forest);
+}

@@ -1,0 +1,71 @@
+.contact__panel {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 2rem;
+  align-items: end;
+  padding: 2.75rem;
+  border-radius: var(--radius-xl);
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.contact__copy .section-label {
+  background: rgba(177, 219, 184, 0.2);
+  color: var(--sage);
+}
+
+.contact__copy h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  color: var(--cream);
+}
+
+.contact__copy p {
+  margin-top: 1rem;
+  max-width: 40ch;
+  color: rgba(255, 254, 252, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.contact__actions {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.contact__actions .btn {
+  background: var(--sage);
+  color: var(--forest);
+}
+
+.contact__actions .btn:hover {
+  background: var(--sage-mid);
+}
+
+.contact__actions .btn-arrow {
+  background: rgba(15, 62, 23, 0.12);
+}
+
+.contact__mail {
+  display: grid;
+  place-items: center;
+  min-height: 3.4rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 254, 252, 0.22);
+  color: var(--cream);
+  font-weight: 500;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.contact__mail:hover {
+  background: rgba(255, 254, 252, 0.06);
+  border-color: rgba(255, 254, 252, 0.4);
+}
+
+@media (max-width: 860px) {
+  .contact__panel {
+    grid-template-columns: 1fr;
+    padding: 1.75rem 1.35rem;
+  }
+}

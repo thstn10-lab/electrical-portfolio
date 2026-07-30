@@ -1,0 +1,256 @@
+.hero {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(320px, 1.15fr);
+  gap: 1rem;
+  min-height: min(72vh, 640px);
+}
+
+.hero__left {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+  min-height: 100%;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  padding: 2.5rem 2.25rem 2.75rem;
+  border-radius: var(--radius-xl);
+  background: var(--sage);
+  color: var(--forest);
+}
+
+.hero__copy h1 {
+  font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+}
+
+.hero__copy p {
+  max-width: 34ch;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(15, 62, 23, 0.82);
+}
+
+.hero__cta {
+  min-height: 4.1rem;
+  font-size: 1.05rem;
+}
+
+.hero__visual {
+  border-radius: var(--radius-xl);
+  background: var(--sky);
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.hero__stage {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  padding: 2rem;
+}
+
+.float-card {
+  position: absolute;
+  width: min(230px, 58%);
+  padding: 1rem 1.05rem 1.1rem;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.float-card header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+
+.float-card__badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: var(--forest);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.float-card strong {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.float-card p {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.float-card--cad {
+  top: 12%;
+  left: 8%;
+  z-index: 3;
+}
+
+.float-card--calc {
+  top: 34%;
+  right: 7%;
+  z-index: 4;
+}
+
+.float-card--permit {
+  bottom: 10%;
+  left: 14%;
+  z-index: 2;
+  width: min(280px, 70%);
+}
+
+.float-card__drawing {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 0.4rem;
+  height: 72px;
+}
+
+.float-card__drawing span {
+  border-radius: 8px;
+  background: linear-gradient(160deg, var(--sage-soft), var(--sky-soft));
+  border: 1px solid var(--line);
+}
+
+.float-card__drawing span:nth-child(1) {
+  grid-row: span 2;
+}
+
+.float-card__rows {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.float-card__rows li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: var(--cream);
+  font-size: 0.78rem;
+}
+
+.float-card__rows em {
+  font-style: normal;
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.float-card__flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.float-card__flow span {
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.float-card__flow i {
+  width: 12px;
+  height: 1px;
+  background: rgba(15, 62, 23, 0.35);
+}
+
+.hero__connectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.hero__marquee {
+  margin-top: 1.75rem;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--sage-soft);
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.hero__marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0.65rem;
+  padding: 0.85rem 0;
+  animation: marquee 28s linear infinite;
+}
+
+.hero__marquee-track span {
+  flex: none;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(255, 254, 252, 0.75);
+  border: 1px solid rgba(15, 62, 23, 0.08);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--forest);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .hero__visual {
+    min-height: 460px;
+  }
+
+  .hero__stage {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero__copy {
+    padding: 1.75rem 1.4rem 2rem;
+  }
+
+  .float-card {
+    width: min(200px, 64%);
+  }
+
+  .float-card--permit {
+    width: min(240px, 78%);
+  }
+}
