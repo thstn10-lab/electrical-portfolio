@@ -13,7 +13,7 @@ const skills = [
     title: "CAD 도면",
     tool: "AutoCAD",
     level: "상",
-    desc: "전기 설계 도면 작성 및 상세 도면 작업",
+    desc: "단선결선도, 배치도, CBD 및 기타 전기 설계 도면 작성",
   },
   {
     title: "인허가 · 검사",
