@@ -37,9 +37,9 @@ export function Contact() {
             </a>
             <a
               className="contact__mail"
-              href="mailto:gkfnrudwn@naver.com"
+              href="mailto:thstn10@gmail.com"
             >
-              gkfnrudwn@naver.com
+              thstn10@gmail.com
             </a>
           </div>
         </motion.div>

@@ -20,13 +20,13 @@ export function Footer() {
           <div>
             <h4>Profile</h4>
             <span>전기 설계 / 팀원</span>
-            <span>전기산업기사</span>
+            <span>전기산업기사 · 변전전기원2급</span>
             <span>Excel · AutoCAD</span>
           </div>
           <div>
             <h4>Contact</h4>
             <a href="tel:01042390207">010-4239-0207</a>
-            <a href="mailto:gkfnrudwn@naver.com">gkfnrudwn@naver.com</a>
+            <a href="mailto:thstn10@gmail.com">thstn10@gmail.com</a>
           </div>
         </div>
       </div>
